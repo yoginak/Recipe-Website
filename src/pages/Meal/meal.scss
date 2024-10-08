@@ -1,0 +1,17 @@
+@use "../../partials/_container.scss";
+@use "../../partials/_colours.scss" as c;
+
+.meal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+//   align-items: center;
+
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 2rem;
+    color: c.$yale-blue;
+  }
+}

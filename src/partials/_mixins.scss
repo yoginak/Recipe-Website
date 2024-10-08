@@ -1,0 +1,15 @@
+// Define variables for the default typography settings
+$font-family-default: "Lora", system-ui;
+$font-optical-sizing-default: auto;
+$font-weight-default: 400;
+$font-style-default: normal;
+
+// Mixin to apply the default typography
+@mixin default-typo($weight: $font-weight-default) {
+  font-family: $font-family-default;
+  font-optical-sizing: $font-optical-sizing-default;
+  font-weight: $weight;
+  font-style: $font-style-default;
+}
+
+

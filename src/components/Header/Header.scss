@@ -1,0 +1,26 @@
+@use "../../partials/_mixins.scss" as m;
+@use "../../partials/_colours.scss" as c;
+
+.logo {
+  display: flex;
+  justify-content:space-around;
+  padding-block: 3rem;
+  align-items: center;
+  gap: 1.5rem;
+ // background: c.$gradient-top-left;
+
+  &__name {
+    @include m.default-typo;
+    color: c.$yale-blue;
+    font-weight: 700;
+  }
+
+  &__link {
+    font-size: 1rem;
+    text-align: center;
+    margin-block: 4rem;
+    padding-left: 1rem;
+    color: c.$yale-blue;
+    text-decoration: none;
+  }
+}
