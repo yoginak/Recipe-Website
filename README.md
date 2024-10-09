@@ -1,4 +1,4 @@
-# Recipe Spark
+# Recipe Website
 
 **Recipe Spark** is a React-based responsive website that allows users to explore a wide variety of recipes from the MealDB API. The app consists of three main pages: **Menu**, **Category**, and **Recipe**.
 
@@ -35,12 +35,12 @@ This project was originally developed during a hackathon I participated in, and 
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/recipe-spark.git
+    git clone https://github.com/your-username/Recipe-Website.git
     ```
 
 2. **Navigate to the project directory**:
     ```bash
-    cd recipe-spark
+    cd Recipe-Website
     ```
 
 3. **Install the dependencies**:
