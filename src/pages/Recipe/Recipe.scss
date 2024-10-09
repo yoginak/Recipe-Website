@@ -22,23 +22,38 @@
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
-&__ingredients{
+
+&__link{
+    padding-left: 1rem;
+    color: c.$red;
+}
+
+&__ingredients {
     padding: 1rem;
     color: c.$dark-brown;
-    &-list{
-        padding: .5rem;
+
+    &-list {
+        padding: 0.5rem;
         list-style: none;
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
     }
-    &-listitem{
-        background: c.$gradient-beige;
+
+    &-listitem {
         border: 1px solid c.$off-white;
-    width: fit-content;
-    padding: 8px;
+        width: fit-content;
+        padding: 8px;
+        &:nth-child(odd) {
+            background: c.$warm-beige; 
+        }
+
+        &:nth-child(even) {
+            background: c.$dark-beige; 
+        }
     }
 }
+
 
 }
 .video-container{

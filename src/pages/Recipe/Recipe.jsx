@@ -1,8 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import './Recipe.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 
 export default function Recipe() {
     
@@ -37,6 +39,10 @@ export default function Recipe() {
         <>       
 
           <div className="container">
+          <Link className='recipe__link' to="/menu" >            
+            <FontAwesomeIcon icon={faArrowLeftLong} />
+            &nbsp;&nbsp;Back to Menu
+        </Link>
           <h2 className='recipe-header'>{meal.strMeal}</h2>
             <div className="video-container">
               <ReactPlayer url={meal.strYoutube} width="100%" height="360px" controls={true} playing={true} />

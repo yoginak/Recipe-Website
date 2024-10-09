@@ -12,7 +12,7 @@ export default function Header() {
   <img className='logo__img' src={logo} alt="logo" />
 </Link>
 <div className='logo__text'>
-<p className='logo__name'>Elevate Your Cooking</p>
+<p className='logo__name'>Recipe Spark</p>
 <p className='logo__emoji'> 👨‍🍳🍳👩‍🍳</p> 
 </div> 
         {/* <img className='logo__img' src={logo} alt="logo" width={50} />

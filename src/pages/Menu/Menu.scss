@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background-color: c.$background-beige;
+   background: c.$gradient-radial;
     @include m.desktop{        
     padding: 2rem 16rem;
     }
