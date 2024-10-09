@@ -1,8 +1,12 @@
 // Define variables for the default typography settings
-$font-family-default: "Lora", system-ui;
+//$font-family-default: "Lora", system-ui;
+$font-family-default: "Georgia", "Arial", system-ui;
 $font-optical-sizing-default: auto;
 $font-weight-default: 400;
 $font-style-default: normal;
+$tablet-min-width: 48rem;
+$desktop-min-width: 80rem;
+$mobile-max-width: 47.9375rem;
 
 // Mixin to apply the default typography
 @mixin default-typo($weight: $font-weight-default) {
@@ -11,5 +15,24 @@ $font-style-default: normal;
   font-weight: $weight;
   font-style: $font-style-default;
 }
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-max-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-min-width) {
+    @content;
+  }
+}
+
 
 

@@ -17,8 +17,8 @@ export default function Meal() {
         setMeals(data.meals)
     }
   return (
-    <section id='meals' className='container'>
-            <h2 className='meal__title'>{category}</h2>
+    <section id='meals' className='container meal__container'>
+            <h4 className='meal__title'>Find Your Next Favorite {category} Dish!</h4>
             <div id='mealContainer' className='meal'>
                 {
                     meals.map((meal) => {

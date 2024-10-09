@@ -2,13 +2,13 @@
 
 .category-card {
   cursor: pointer;
-  border: 1px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 12rem;
   border-radius: 5px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: c.$cool-gray;
+  background-color: #fdf5f1;
   border-radius: 10px;
 }
 
@@ -19,8 +19,8 @@
 
 .category-text {
   font-size: 24px;
-  color: c.$yale-blue;
-  background-color: c.$lavender-pink;
+  color: c.$brown;
+  background-color: #f4e3d3;
   width: 100%;
   padding: 10px;
   bottom: 0;

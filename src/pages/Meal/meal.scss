@@ -1,17 +1,25 @@
 @use "../../partials/_container.scss";
 @use "../../partials/_colours.scss" as c;
+@use "../../partials/_mixins.scss" as m;
 
 .meal {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-//   align-items: center;
+
+&__container{
+  background: c.$gradient-beige-right;
+  @include m.desktop{    
+  padding: 0 16rem;
+  }
+}
 
   &__title {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
-    margin-block: 2rem;
-    color: c.$yale-blue;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #48240a;
   }
 }

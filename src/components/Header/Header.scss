@@ -1,26 +1,63 @@
 @use "../../partials/_mixins.scss" as m;
 @use "../../partials/_colours.scss" as c;
 
+.header {
+  border-bottom: 1px solid c.$dark-beige;
+}
+
 .logo {
   display: flex;
-  justify-content:space-around;
-  padding-block: 3rem;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
- // background: c.$gradient-top-left;
+  @include m.tablet {
+    padding-left: 3rem;
+  }
+  @include m.desktop {
+    padding-left: 20rem;
+  }
 
   &__name {
     @include m.default-typo;
-    color: c.$yale-blue;
+    background: linear-gradient(135deg, #8b4513, #ff4500, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
+    @include m.tablet {
+      font-size: 1.75rem;
+    }
+    @include m.desktop {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__emoji {
+    @include m.tablet {
+      font-size: 1.75rem;
+    }
+    @include m.desktop {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    @include m.tablet {
+      flex-direction: row;
+    }
   }
 
   &__link {
     font-size: 1rem;
     text-align: center;
-    margin-block: 4rem;
     padding-left: 1rem;
-    color: c.$yale-blue;
+    color: c.$brown;
     text-decoration: none;
+  }
+
+  &__img {
+    width: 200px;
+    padding-top: 1rem;
   }
 }

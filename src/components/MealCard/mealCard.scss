@@ -3,15 +3,18 @@
 .meal-card {
   width: 200px;
   height: 100%;
-  background-color: c.$cool-gray;
-  border-radius: 10px;
-//   flex: 1;
 
   &__content {
-    color: c.$yale-blue;
+    color: c.$dark-brown;
     padding-block: 1rem;
     font-size: 1rem;
     text-align: center;
     text-decoration: none;
+  }
+  &__link{
+    text-decoration: none;
+  }
+  &__img{
+    border-radius: 10px;
   }
 }

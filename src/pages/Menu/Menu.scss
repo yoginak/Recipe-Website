@@ -1,9 +1,16 @@
 @use '../../partials/_container.scss';
+@use "../../partials/_colours.scss" as c;
+@use "../../partials/_mixins.scss" as m;
 
 .category {
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    background-color: c.$background-beige;
+    @include m.desktop{        
+    padding: 2rem 16rem;
+    }
 }
