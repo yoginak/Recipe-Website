@@ -18,11 +18,13 @@
   }
 
   &__name {
+    padding-top: 1rem;
     @include m.default-typo;
     background: linear-gradient(135deg, #8b4513, #ff4500, #ffa500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+    font-size: 1.5rem;
     @include m.tablet {
       font-size: 1.75rem;
     }
@@ -32,6 +34,7 @@
   }
 
   &__emoji {
+    font-size: 1.5rem;
     @include m.tablet {
       font-size: 1.75rem;
     }

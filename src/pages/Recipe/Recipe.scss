@@ -6,6 +6,9 @@
     margin-right: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    @include m.desktop{    
+        padding: 0 16rem;
+        }
 }
 &-header{
     padding:1rem;
